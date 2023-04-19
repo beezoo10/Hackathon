@@ -1,0 +1,11 @@
+{
+  "name": "TESTING?",
+  "description": "Base Level Extension",
+  "version": "1.0.1",
+  "manifest_version": 3,
+  "author": "Jimmy and Brisa",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "______"
+  }
+}
