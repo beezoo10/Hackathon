@@ -28,8 +28,8 @@ let id;
 
 const start = () => {
   clearInterval(id);
-  upperCont.style.backgroundColor = "#77eb6e";
-  lowerCont.style.backgroundColor = "#77eb6e";
+  upperCont.style.backgroundColor = "#eb6e6e";
+  lowerCont.style.backgroundColor = "#eb6e6e";
   //FUNCTIONALITY
   let workInputTime = workInput.value;
   workTimer.innerText = workInputTime;
@@ -63,8 +63,8 @@ const start = () => {
 // stops work timer and begin break timer
 const breaking = () => {
   clearInterval(id);
-  upperCont.style.backgroundColor = "#eb6e6e";
-  lowerCont.style.backgroundColor = "#eb6e6e";
+  upperCont.style.backgroundColor = "#77eb6e";
+  lowerCont.style.backgroundColor = "#77eb6e";
   let breakInputTime = breakInput.value;
   breakTimer.innerText = breakInputTime;
   breakInput.style.display = "none";

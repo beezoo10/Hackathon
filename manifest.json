@@ -1,6 +1,6 @@
 {
-  "name": "TESTING?",
-  "description": "Base Level Extension",
+  "name": "doropomo",
+  "description": "pomodoro timer that automatically switches between work and break",
   "version": "1.0.1",
   "manifest_version": 3,
   "author": "Jimmy and Brisa",
