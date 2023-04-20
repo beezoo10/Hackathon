@@ -37,15 +37,15 @@ const start = () => {
   workTimer.style.display = "block";
   mainButton.innerHTML = "Take a break!";
 
-  (async () => {
+  const setWork = async () => {
     const response = await chrome.runtime.sendMessage({
       method: "set_work",
       num: workInputTime,
     });
-    // do something with response here, not outside the function
-  })();
+  };
 
   id = setInterval(() => {
+    setWork();
     --workInputTime;
     workTimer.innerHTML = workInputTime;
     if (workInputTime <= 0) {
@@ -71,15 +71,15 @@ const breaking = () => {
   breakTimer.style.display = "block";
   mainButton.innerHTML = "Back to work!";
 
-  (async () => {
+  const setBreak = async () => {
     const response = await chrome.runtime.sendMessage({
       method: "set_break",
       num: breakInputTime,
     });
-    // do something with response here, not outside the function
-  })();
+  };
 
   id = setInterval(() => {
+    setBreak();
     --breakInputTime;
     breakTimer.innerHTML = breakInputTime;
     if (breakInputTime <= 0) {
