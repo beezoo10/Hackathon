@@ -9,6 +9,75 @@
     <title>Hackathon</title>
   </head>
   <body>
-    <h1>"hello"</h1>
+    <div id="container">
+      <!-- time descriptor -->
+      <!-- <div class="inside-container" id="1">
+        <p>work for</p>
+        <p>break for</p>
+      </div> -->
+      <!-- time count -->
+      <div class="inside-container" id="two">
+        <div class="timeContainer" id="workContainer">
+          <!-- HOW LONG TO SET TIMER FOR -->
+          <label for="work">work for</label>
+          <input
+            type="number"
+            min="5"
+            max="60"
+            step="1"
+            placeholder="5"
+            value="5"
+            id="work" />
+          <p></p>
+          <h1>minutes</h1>
+        </div>
+        <div class="timeContainer" id="breakContainer">
+          <label for="break">break for</label>
+          <input
+            type="number"
+            min="1"
+            max="60"
+            step="1"
+            placeholder="5"
+            value="5"
+            id="break" />
+          <p></p>
+          <h1>minutes</h1>
+        </div>
+      </div>
+      <!-- buttons -->
+      <div class="inside-container" id="three">
+        <button id="button1">Start Working!</button>
+        <button id="button2">Reset</button>
+      </div>
+      <!-- Spotify ? Maybe -->
+      <!-- <div class="inside-container" id="4"></div> -->
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> -->
+    <!-- spotify shenanigans -->
+    <!-- <script src="app.js"></script>
+    <div id="embed-iframe"></div> -->
+    <!-- spotify almost working -->
+    <!-- <script
+      src="https://open.spotify.com/embed-podcast/iframe-api/v1"
+      async></script>
+    <script type="text/javascript">
+      window.onSpotifyIframeApiReady = (IFrameAPI) => {
+        const element = document.getElementById("embed-iframe");
+        const options = {
+          width: "320px",
+          height: "200",
+          uri: "spotify:playlist:4x9OtLt7bsmvqktbF0Y0Gm",
+        };
+        const callback = (EmbedController) => {
+          document.querySelectorAll(".track").forEach((track) => {
+            track.addEventListener("click", () => {
+              EmbedController.loadUri(track.dataset.spotifyId);
+            });
+          });
+        };
+        IFrameAPI.createController(element, options, callback);
+      };
+    </script> -->
   </body>
 </html>
